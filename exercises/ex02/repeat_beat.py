@@ -12,7 +12,7 @@ if maximum < 1:
     print("No beat...")
 else:
     while counter < maximum - 1:
-        second = second + beat + " ."
+        second = second + beat + " "
         counter = counter + 1
         while counter == maximum:
             beat
