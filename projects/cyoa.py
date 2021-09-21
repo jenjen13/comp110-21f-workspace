@@ -22,8 +22,10 @@ def main() -> None:
     """The program's entrypoint."""
     greet()
     intro()
+    cont()
     print(f"{player} currently has: {points} points")
     print(f"Thank you for playing Cooking Mama {player}! Come Again Next Time {HEART}")
+    return None
 
 
 def greet() -> None:
@@ -35,6 +37,7 @@ def greet() -> None:
     print(f"{SPARKLE} (If your recipe is right, you will have a higher number of points. If you add the wrong amount of ingredients together, your points will be deducted) {SPARKLE}")
     print("Fortunately, you have many choices today! We can make a cake for a special guest, a donut for a friend, a pie for grandma, or a mystery game.")
     print(f"{CAKE} {DON} {PIE}")
+    return None
 
 
 def intro() -> None:
@@ -53,6 +56,7 @@ def intro() -> None:
             else:
                 if choice == str("mystery game" or "a mystery game" or "mystery"):
                     mystery(points)
+    return None
 
 
 def cont() -> None:
@@ -61,6 +65,7 @@ def cont() -> None:
     contin: str = input("Type \"Yes\" to continue the game or \"No\" to end the game: ")
     if contin == str("yes" or "Yes"):
         intro()
+    return None
 
 
 def mystery(points: int) -> int:
@@ -81,11 +86,10 @@ def game() -> None:
     if guess == number:
         points = points + guess
         print(f"{player} has: {points} points {SPARKLE}")
-        cont()
     else:
         points = points - guess
         print(f"{player} has: {points} points {SAD_EMOJI}")
-        cont()
+    return None
 
 
 def pie() -> None:
@@ -160,7 +164,7 @@ def pie() -> None:
         print("I think I have the recipe saved somewhere. Hold on let me look.")
         print(f"A-ha! I found it. {SPARKLE} \nThe recipe for the pie cake is: \napples: 6 \nsugar: 1 \nbutter: 1 \npie crust: 1 \ndegree: 425 \nminute: 45")
         print(f"Make sure you write the recipe down so next time your score can be higher {SMILE_EMOJI}")
-    return cont()
+    return None
 
 
 def burning() -> None:
@@ -182,6 +186,7 @@ def burning() -> None:
     print(f"{DROP} {DROP} {DROP}")
     print("*Whew* Thanks to the firemen, the fire was put out. But sadly, the pie got burnt.")
     print("Grandma will still appreciate that you attempted to make her a pie.")
+    return None
 
 
 def cake() -> None:
@@ -268,7 +273,7 @@ def cake() -> None:
         print("I think I have the recipe saved somewhere. Hold on let me look.")
         print(f"A-ha! I found it. {SPARKLE} \nThe recipe for the perfect cake is: \nsugar: 1 \neggs: 2 \nflour: 2 \nbutter: 1 \nmilk: 1 \nstrawberries: 6 \ndegree: 350 \nminute: 35")
         print(f"Make sure you write the recipe down so next time your score can be higher {SMILE_EMOJI}")
-    return cont()
+    return None
 
 
 def mary() -> None:
@@ -287,6 +292,7 @@ def mary() -> None:
     thanks: str = str(input("Type “Thank You Mary!” to respond back to Mary: "))
     print(f"You say {thanks}.")
     points = points + 1
+    return None
 
 
 def gordon_one() -> None:
@@ -307,6 +313,7 @@ def gordon_one() -> None:
     response: str = str(input("Type “Yes chef” to respond to Gordon Ramsay: "))
     print(f"You say {response}.")
     points = points + 1
+    return None
 
 
 def gordon_two() -> None:
@@ -327,6 +334,7 @@ def gordon_two() -> None:
     response: str = str(input("Type “Yes chef” to respond to Gordon Ramsay: "))
     print(f"You say {response}.")
     points = points + 1
+    return None
 
 
 def gordon_three() -> None:
@@ -347,6 +355,7 @@ def gordon_three() -> None:
     response: str = str(input("Type “Yes chef” to respond to Gordon Ramsay: "))
     print(f"You say {response}.")
     points = points + 1
+    return None
 
 
 def gordon_four() -> None:
@@ -366,6 +375,7 @@ def gordon_four() -> None:
     response: str = str(input("Type “Yes chef” to respond to Gordon Ramsay: "))
     print(f"You say {response}.")
     points = points + 1
+    return None
 
 
 def donut() -> None:
@@ -444,6 +454,7 @@ def donut() -> None:
         print("I think I have the recipe saved somewhere. Hold on let me look.")
         print(f"A-ha! I found it. {SPARKLE} \nThe recipe for the perfect donuts is: \nsugar: 1 \negg: 2 \nflour: 1 \nbutter: 1 \nmilk: 1 \nminute: 2")
         print(f"Make sure you write the recipe down so next time your score can be higher! {SMILE_EMOJI}")
+    return None
 
 
 if __name__ == "__main__":
