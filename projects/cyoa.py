@@ -24,6 +24,15 @@ def main() -> None:
     print(f"Thank you for playing Cooking Mama {player}! Come Again Next Time {HEART}")
 
 
+def greet() -> None:
+    """Greet player."""
+    print(f"{SPARKLE} Greetings {player}! {SPARKLE} Welcome to Cooking Mama!\nToday is a very busy day so we must get started quickly!")
+    print("Sadly, I have lost my cookbook, so I am going to need your help with the recipe.")
+    print(f"{SPARKLE} (If your recipe is right, you will have a higher number of points. If you add the wrong amount of ingredients together, your points will be deducted) {SPARKLE}")
+    print("Fortunately, you have many choices today! We can make a cake for a special guest, a donut for a friend, a pie for grandma, or a mystery game.")
+    print(f"{CAKE} {DON} {PIE}")
+
+
 def intro() -> None:
     """Intro."""
     choice: str = input(f"{SPARKLE} What will you choose today? Cake, donut, pie, mystery game, or end the game: ")
@@ -40,15 +49,6 @@ def intro() -> None:
             else:
                 if choice == str("mystery game" or "a mystery game" or "mystery"):
                     mystery(points)
-
-
-def greet() -> None:
-    """Greet player."""
-    print(f"{SPARKLE} Greetings {player}! {SPARKLE} Welcome to Cooking Mama!\nToday is a very busy day so we must get started quickly!")
-    print("Sadly, I have lost my cookbook, so I am going to need your help with the recipe.")
-    print(f"{SPARKLE} (If your recipe is right, you will have a higher number of points. If you add the wrong amount of ingredients together, your points will be deducted) {SPARKLE}")
-    print("Fortunately, you have many choices today! We can make a cake for a special guest, a donut for a friend, a pie for grandma, or a mystery game.")
-    print(f"{CAKE} {DON} {PIE}")
 
 
 def cont() -> None:
