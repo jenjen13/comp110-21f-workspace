@@ -25,6 +25,7 @@ def main() -> None:
 
 
 def intro() -> None:
+    """Intro."""
     choice: str = input(f"{SPARKLE} What will you choose today? Cake, donut, pie, mystery game, or end the game: ")
     global points
     points = points - points
@@ -59,6 +60,7 @@ def cont() -> None:
 
 
 def mystery(points: int) -> int:
+    """Entry point to game."""
     print(f"Welcome to the mystery game {player}! Today we're going to play a guessing game!")
     print(f"All the donuts that we make today have a random number of sprinkles on them from 1 to 100. {DON}{DON}{DON}") 
     print("You're job will be to guess the number of sprinkles there are on each donut. If you guess incorrectly, your number of points will be deducted.")
@@ -68,6 +70,7 @@ def mystery(points: int) -> int:
 
 
 def game() -> None:
+    """The game."""
     global number
     global points
     guess: int = int(input("The donut has __ number of sprinkles: "))
@@ -157,6 +160,7 @@ def pie() -> None:
 
 
 def burning() -> None:
+    "The pie is burnt."
     print("Oh no! The amount of time was wrong and now the pie is burning!")
     print(f"The oven is on fire!!! {FIRE} {FIRE} {FIRE} {FIRE} \nQuickly we must put the fire out! ")
     water: str = str(input("Type “water” to spray water into the oven: "))
@@ -264,6 +268,7 @@ def cake() -> None:
 
 
 def mary() -> None:
+    """"Mary encourages you."""
     print("Yay! The cake came out perfect! Now let’s give the cake to our special guest!")
     print("Introducing Mary Berry from the Great British Bake Off! Welcome Mary!")
     expression: str = str(input("Type “smile nervously” to make an expression at the sight of Mary Berry: "))
@@ -281,6 +286,7 @@ def mary() -> None:
 
 
 def gordon_one() -> None:
+    """Gordon yells at you first option."""
     print("Yay! We made a great cake, even if it is a little undercooked hehe. Now let’s give the cake to our special guest!")
     print("Introducing Gordon Ramsay! Welcome Gordon!")
     nervous: str = str(input("Type “smile nervously” to make an expression at the sight of Gordon Ramsey: "))
@@ -300,6 +306,7 @@ def gordon_one() -> None:
 
 
 def gordon_two() -> None:
+    """Gordon yells at you second option."""
     print("Yay! We made a great cake, even if the recipe is a little off hehe. Now let’s give the cake to our special guest!")
     print("Introducing Gordon Ramsay! Welcome Gordon!")
     nervous: str = str(input("Type “smile nervously” to make an expression at the sight of Gordon Ramsey: "))
@@ -319,6 +326,7 @@ def gordon_two() -> None:
 
 
 def gordon_three() -> None:
+    """Gordon yells at you third option."""
     print("Yay! We made a great cake, even if it is a little undercooked hehe. Now let’s give the cake to our special guest!")
     print("Introducing Gordon Ramsay! Welcome Gordon!")
     nervous: str = str(input("Type “smile nervously” to make an expression at the sight of Gordon Ramsey: "))
@@ -338,6 +346,7 @@ def gordon_three() -> None:
 
 
 def gordon_four() -> None:
+    """Gordon yells at you fourth option."""
     print("Yay! We made a great cake, even if the recipe and cooking timing is a little off hehe. Now let’s give the cake to our special guest!")
     print("Introducing Gordon Ramsay! Welcome Gordon!")
     nervous: str = str(input("Type “smile nervously” to make an expression at the sight of Gordon Ramsey: "))
