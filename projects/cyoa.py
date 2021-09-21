@@ -160,7 +160,7 @@ def pie() -> None:
 
 
 def burning() -> None:
-    "The pie is burnt."
+    """The pie is burnt."""
     print("Oh no! The amount of time was wrong and now the pie is burning!")
     print(f"The oven is on fire!!! {FIRE} {FIRE} {FIRE} {FIRE} \nQuickly we must put the fire out! ")
     water: str = str(input("Type “water” to spray water into the oven: "))
@@ -268,7 +268,7 @@ def cake() -> None:
 
 
 def mary() -> None:
-    """"Mary encourages you."""
+    """Mary encourages you."""
     print("Yay! The cake came out perfect! Now let’s give the cake to our special guest!")
     print("Introducing Mary Berry from the Great British Bake Off! Welcome Mary!")
     expression: str = str(input("Type “smile nervously” to make an expression at the sight of Mary Berry: "))
