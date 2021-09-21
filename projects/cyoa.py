@@ -1,6 +1,6 @@
 """Cooking mama simulator!"""
 
-___author___ = "730404596"
+__author__ = "730404596"
 
 from random import randint
 points: int = 0
