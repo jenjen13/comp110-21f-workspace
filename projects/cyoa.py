@@ -245,24 +245,24 @@ def cake() -> None:
     points = points + 1
     print("Good job! You iced the cake and added the strawberries perfectly!")
     if sugar == 1 and eggs == 2 and flour == 2 and butter == 1 and milk == 1 and strawberries == 6 and degree == 350 and minute == 35:
-        print(mary())
+        mary()
     else:
         if sugar == 1 and eggs == 2 and flour == 2 and butter == 1 and milk == 1 and strawberries == 6 and degree < 350 or minute < 35:
-            print(gordon_one())
+            gordon_one()
         else:
             if sugar > 1 and eggs > 2 and flour > 2 and butter > 1 and milk > 1 and strawberries > 6 and degree == 350 and minute == 35:
-                print(gordon_two())
+                gordon_two()
             else:
                 if 1 > sugar and 2 > eggs and 2 > flour and 1 > butter and 1 > milk and 6 > strawberries and degree < 350 and minute < 35:
-                    print(gordon_two())
+                    gordon_two()
                 else:
                     if sugar < 1 and eggs < 2 and flour < 2 and butter < 1 and milk < 1 and strawberries < 6 and degree == 350 and minute == 35:
-                        print(gordon_three())
+                        gordon_three()
                     else: 
                         if sugar < 1 and eggs < 2 and flour < 2 and butter < 1 and milk < 1 and strawberries < 6 and degree < 350 and minute < 35:
-                            print(gordon_three())
+                            gordon_three()
                         else:
-                            print(gordon_four())
+                            gordon_four()
     print("Yay you have fed your guest! Now let's see how many points you have received.")
     print(f"{player} currently has: {points} points")
     if points == 403:
