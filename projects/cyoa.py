@@ -4,7 +4,7 @@ ___author___ = "730404596"
 
 from random import randint
 points: int = 0
-player: str = input("Hello! Before we get started, what is your name? ")
+player: str = str()
 WINKING: str = "\U0001F609"
 FIRE: str = "\U0001F525"
 DROP: str = "\U0001F4A7"
@@ -28,6 +28,8 @@ def main() -> None:
 
 def greet() -> None:
     """Greet player."""
+    global player
+    player = input("Hello! Before we get started, what is your name? ")
     print(f"{SPARKLE} Greetings {player}! {SPARKLE} Welcome to Cooking Mama!\nToday is a very busy day so we must get started quickly!")
     print("Sadly, I have lost my cookbook, so I am going to need your help with the recipe.")
     print(f"{SPARKLE} (If your recipe is right, you will have a higher number of points. If you add the wrong amount of ingredients together, your points will be deducted) {SPARKLE}")
