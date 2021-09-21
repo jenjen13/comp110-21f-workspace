@@ -1,5 +1,7 @@
 """Cooking mama simulator!"""
 
+___author___ = "730404596"
+
 from random import randint
 points: int = 0
 player: str = input("Hello! Before we get started, what is your name? ")
