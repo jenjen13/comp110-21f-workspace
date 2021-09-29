@@ -29,7 +29,7 @@ def max(lop: list[int]) -> int:
         raise ValueError("max() arg is an empty List")
     else:
         while i < len(lop):
-            if lop[i] > lop[i - 1]:
+            if lop[i] > lop[i + 1]:
                 return lop[i]
             i += 1
     return lop[i]
