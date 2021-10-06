@@ -5,6 +5,8 @@ from exercises.ex05.utils import only_evens, sub, concat
 
 __author__ = "730404596"
 
+"""Unit test for only_evens."""
+
 
 def test_only_evens_use_case_one() -> None:
     """Test to find even numbers in a list."""
@@ -22,6 +24,9 @@ def test_only_evens_edge_case() -> None:
     """If list is empty, return an empty list."""
     xs: list[int] = []
     assert only_evens(xs) == []
+
+
+"""Unit test for sub."""
 
 
 def test_sub_use_case_one() -> None:
@@ -42,6 +47,9 @@ def test_sub_edge_case() -> None:
     assert sub(a_list, 1, 3) == []
 
 
+"""Unit test for concat."""
+
+
 def test_concat_use_case_one() -> None:
     inventory: list[int] = [1, 2, 3]
     catalog: list[int] = [4, 5, 6]
@@ -58,4 +66,3 @@ def test_concat_edge_case() -> None:
     inventory: list[int] = []
     catalog: list[int] = []
     assert concat(inventory, catalog) == []
-
